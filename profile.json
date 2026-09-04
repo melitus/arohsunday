@@ -1,0 +1,183 @@
+{
+  "personalInfo": {
+    "name": "Aroh Sunday",
+    "headline": "Senior Backend Engineer | Architecting Resilient Distributed Systems & Production AI | Building Trust via Smart Contracts",
+    "location": "Montreal, Quebec, Canada",
+    "contact": {
+      "email": "asmelitus@gmail.com",
+      "phone": "+2348061329356",
+      "linkedin": "https://www.linkedin.com/in/arohsunday"
+    },
+    "summary": "Senior Software Engineer specializing in scalable, production-ready systems. I architect backend infrastructure that makes AI reliable and blockchain trustworthy - scaling microservices, distributed systems, and intelligent pipelines that drive real impact. Over 9+ years, I've built production systems across fintech, healthcare, logistics, and climate tech. I don't just integrate AI models - I architect the backend pipelines, data systems, and deployment layers that make them reliable at scale. I don't just write smart contracts - I design decentralized protocols that solve real trust and provenance problems."
+  },
+  "topSkills": [
+    "Agentic AI Development",
+    "Large Language Models (LLM)",
+    "Software AI",
+    "Node.js / TypeScript / NestJS",
+    "Python / FastAPI",
+    "GraphQL / gRPC / Kafka",
+    "Docker / Kubernetes / AWS / GCP",
+    "Solidity / Rust / Smart Contracts"
+  ],
+  "workExperience": [
+    {
+      "company": "BusPas Inc.",
+      "role": "Mitacs Accelerate Research Intern",
+      "location": "Montreal, QC",
+      "startDate": "2026-01",
+      "endDate": "Present",
+      "description": "Building MAS-DQA: a multi-agent framework for verifiable data quality governance in real-time mobility streams. Focus on adaptive statistical profiling, LLM-based semantic validation, and trust-aware conflict resolution.",
+      "technologies": ["Python", "Kafka", "Flink", "LLMs"]
+    },
+    {
+      "company": "DryvAfrica",
+      "role": "CTO / Co-founder",
+      "location": "Lagos, Lagos State, Nigeria",
+      "startDate": "2022-07",
+      "endDate": "2025-12",
+      "description": "Co-founded and engineered a microservice-based bus booking aggregator platform and metasearch engine simplifying booking processes across providers.",
+      "technologies": ["Node.js", "TypeScript", "Apollo Federation", "GraphQL", "Redis", "AWS", "Kafka"]
+    },
+    {
+      "company": "Dymaxion OÜ",
+      "role": "Senior Software Engineer - Blockchain",
+      "location": "Estonia",
+      "startDate": "2022-02",
+      "endDate": "2025-12",
+      "highlights": [
+        "Increased trust in digital certifications by 95% by designing and deploying smart contracts for E-Cert using Solidity, Node.js, Truffle, Metamask, and Web3.",
+        "Achieved 90% identity verification accuracy by co-designing and implementing a Multi-Factor Self-Sovereign Identity Authentication Protocol with Node.js, NestJS, iExec, Solidity, Polygon, DKG, and React.",
+        "Reduced fake product identification and tracking issues by 70% by building a Logistics Blockchain Digital Twin with Python, Robonomics blockchain, Polkadot, web3.js, and IPFS.",
+        "Increased MFSSIA platform security by 35% by integrating EigenLayer staking and slashing mechanisms.",
+        "Reduced potential attack vectors by 40% through decentralized authentication and slashing improvements."
+      ],
+      "technologies": ["Solidity", "Node.js", "NestJS", "Python", "Polygon", "EigenLayer", "IPFS", "Web3.js"]
+    },
+    {
+      "company": "CareerFoundry",
+      "role": "Full-Stack Immersion Bootcamp Mentor",
+      "location": "Berlin, Germany",
+      "startDate": "2021-02",
+      "endDate": "2025-12",
+      "highlights": [
+        "Accomplished a 75% increase in job placement rate by providing career coaching and job search support to 10+ engineers.",
+        "Enhanced student performance by 80% by conducting pair programming sessions and applying real-life programming use cases.",
+        "Raised student satisfaction by 90% by providing personalized mentoring and career guidance."
+      ]
+    },
+    {
+      "company": "XRPL Commons",
+      "role": "Participant - XRPL Commons Aquarium Program | DeFi",
+      "location": "Paris, Île-de-France, France",
+      "startDate": "2024-09",
+      "endDate": "2024-12",
+      "description": "Selected for the XRPL Commons Aquarium Program focused on developing DeFi innovations on the XRPL blockchain, including creating tokens, liquidity pools, coding hooks, smart contracts, and co-architecting RYTU (a programmable IP rights layer).",
+      "technologies": ["XRPL", "DeFi", "Hooks", "Smart Contracts"]
+    },
+    {
+      "company": "GreenAnt",
+      "role": "Senior Backend Developer",
+      "location": "Netherlands",
+      "startDate": "2023-02",
+      "endDate": "2024-03",
+      "highlights": [
+        "Developed the NFT marketplace backend API for carbon trees owned by farmers, allowing users to view, buy, and list tokens.",
+        "Designed comprehensive Swagger-based API documentation, increasing ease of endpoint integration by 80%.",
+        "Developed an optimized spatial data persistence and retrieval model, reducing data storage and management costs by 70%.",
+        "Integrated an AI model with FastAPI, elevating AI-driven capabilities by 60%."
+      ],
+      "technologies": ["FastAPI", "NestJS", "Node.js", "TypeScript", "PostgreSQL", "GCP", "Ethereum"]
+    },
+    {
+      "company": "CribMD",
+      "role": "Microservice Developer",
+      "location": "United States",
+      "startDate": "2021-10",
+      "endDate": "2022-05",
+      "highlights": [
+        "Led migration from legacy monolithic application into cloud-hosted microservices, enabling seamless scalability for a 10X increase in traffic.",
+        "Integrated Kafka for real-time data processing, enhancing system responsiveness by 60%.",
+        "Implemented gRPC for inter-service communication, reducing latency by 50%.",
+        "Optimized database performance by migrating to MongoDB and Redis, resulting in a 70% reduction in query times."
+      ],
+      "technologies": ["JavaScript", "Docker", "Kubernetes", "Kafka", "gRPC", "MongoDB", "Redis"]
+    },
+    {
+      "company": "Dynamic Flakes Limited",
+      "role": "Co-Founder | Lead Backend Engineer",
+      "location": "Lagos, Nigeria",
+      "startDate": "2015-06",
+      "endDate": "2021-03",
+      "highlights": [
+        "Implemented a faceted search query with Elasticsearch cutting product query time by 70%.",
+        "Developed critical components for the Connetmi e-commerce platform, contributing to a 25% increase in sales.",
+        "Led a team of 3 engineers using MEAN stack.",
+        "Migrated legacy system to modern tech stack, reducing maintenance costs by 20%.",
+        "Proposed algorithm approach for best-selling/trending products without ML tools, reducing costs by 40%."
+      ],
+      "technologies": ["Elasticsearch", "Node.js", "Express", "MongoDB", "Angular"]
+    },
+    {
+      "company": "Telnet Nigeria Limited",
+      "role": "Junior Backend Developer",
+      "location": "Victoria Island, Lagos State",
+      "startDate": "2014-12",
+      "endDate": "2015-02",
+      "technologies": ["Core Java", "JavaEE", "Tomcat", "Hibernate", "Maven", "Thymeleaf", "Spring MVC", "C#", "MSSQL"]
+    },
+    {
+      "company": "JIT Solution Company",
+      "role": "Java Instructor (Contract)",
+      "location": "Ado-Ekiti, Ekiti State",
+      "startDate": "2013-08",
+      "endDate": "2014-02",
+      "technologies": ["Java", "MySQL", "MSSQL"]
+    },
+    {
+      "company": "UC Networks",
+      "role": "Computer Analyst and Circuit Designer (SIWES)",
+      "location": "Nsukka, Enugu State",
+      "startDate": "2011-07",
+      "endDate": "2011-12"
+    }
+  ],
+  "education": [
+    {
+      "institution": "Polytechnique Montréal",
+      "degree": "Master's degree, Computer Engineering - Software Engineering Option",
+      "startDate": "2026-01",
+      "endDate": "2028-01",
+      "notes": "SE4AI CREATE Graduate Fellow (NSERC-funded), Engineering AI-based Software Systems"
+    },
+    {
+      "institution": "University of Nigeria, Nsukka",
+      "degree": "Engineer's degree, Electronic Engineering",
+      "startDate": "2007",
+      "endDate": "2012"
+    },
+    {
+      "institution": "High Tech IT and Engineering",
+      "degree": "Training, Instrumentation and Control System",
+      "startDate": "2015",
+      "endDate": "2015"
+    },
+    {
+      "institution": "Saint Teresa's College, Nsukka",
+      "degree": "High School Diploma",
+      "startDate": "2001",
+      "endDate": "2007"
+    }
+  ],
+  "certifications": [
+    { "name": "Blockchain Masterclass" },
+    { "name": "GitHub Profile Ownership Verified (Ranked in top 0.83%)", "date": "2021-12-22" },
+    { "name": "Intro to Machine Learning" },
+    { "name": "Lab - Terraform for Beginners" },
+    { "name": "Problem Solver" }
+  ],
+  "honorsAndAwards": [
+    { "title": "ACADEMIC EXCELLENCE AWARD" },
+    { "title": "Assistant Director of Technical (Java Instructor and Team member)" }
+  ]
+}
