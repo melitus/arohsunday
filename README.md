@@ -23,11 +23,14 @@ Then visit `http://localhost:8080`.
 ## Structure
 
 ```
-├── index.html          # Main page
-├── css/styles.css      # Styles (GameVoc-inspired palette)
-├── js/main.js          # Scroll animations & mobile nav
-├── profile.json        # Source profile data
-├── profile.jpg         # Profile photo
-├── background.png      # Hero cover image
-└── CM5_CONTRIBUTOR_VISUAL_1_TWITTER.png  # XRPL Magazine visual
+├── index.html              # Main page
+├── css/styles.css          # Styles (GameVoc-inspired palette)
+├── js/main.js              # Scroll animations & mobile nav
+├── assets/
+│   └── images/
+│       ├── profile.jpg     # Profile photo
+│       ├── background.png  # Hero banner
+│       └── CM5_CONTRIBUTOR_VISUAL_1_TWITTER.png  # XRPL Magazine visual
+└── data/
+    └── profile.json        # Source profile data
 ```
