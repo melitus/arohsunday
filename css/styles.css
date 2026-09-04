@@ -327,6 +327,22 @@ img {
   line-height: 1.75;
 }
 
+.about-intro {
+  margin-bottom: 1.25rem;
+}
+
+.about-intro a {
+  color: var(--accent-primary);
+  font-weight: 500;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  transition: var(--transition);
+}
+
+.about-intro a:hover {
+  color: var(--accent-secondary);
+}
+
 .intent-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
