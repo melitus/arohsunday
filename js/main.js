@@ -31,7 +31,7 @@
   );
 
   document.querySelectorAll(
-    '.intent-card, .project-card, .timeline-item, .skill-group, .education-card, .scholar-card, .magazine-card'
+    '.intent-card, .project-card, .timeline-item, .skill-group, .education-card, .scholar-card, .magazine-card, .award-card'
   ).forEach((el) => {
     el.classList.add('fade-in');
     observer.observe(el);

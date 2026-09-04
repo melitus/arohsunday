@@ -170,14 +170,32 @@
     }
   ],
   "certifications": [
+    { "name": "Diploma in Computer Engineering" },
+    { "name": "Project Management — Primavera P6 and MS Project" },
+    { "name": "MongoDB M103: Basic Cluster Administration" },
+    { "name": "API Security Architect" },
+    { "name": "AWS Lambda Foundation" },
+    { "name": "Lab - Terraform for Beginners" },
+    { "name": "AWS Knowledge: Serverless" },
+    { "name": "Expert Solidity Bootcamp" },
+    { "name": "Senior Engineer to Lead: Grow and Thrive in the Role", "issuer": "Maven" },
     { "name": "Blockchain Masterclass" },
     { "name": "GitHub Profile Ownership Verified (Ranked in top 0.83%)", "date": "2021-12-22" },
     { "name": "Intro to Machine Learning" },
-    { "name": "Lab - Terraform for Beginners" },
     { "name": "Problem Solver" }
   ],
   "honorsAndAwards": [
-    { "title": "ACADEMIC EXCELLENCE AWARD" },
-    { "title": "Assistant Director of Technical (Java Instructor and Team member)" }
+    {
+      "title": "Assistant Director of Technical (Java Instructor and Team Member)",
+      "issuer": "I.C.T Community Development Services",
+      "date": "2013-02",
+      "description": "In recognition of commitment and selfless service towards educational, moral, and social uplift of I.C.T CDS Group and N.Y.S.C at large throughout one year of national service in Ekiti State."
+    },
+    {
+      "title": "Academic Excellence Award",
+      "issuer": "NsukkaUSA Inc",
+      "date": "2012-12",
+      "description": "In recognition of outstanding academic achievement."
+    }
   ]
 }
