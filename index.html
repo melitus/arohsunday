@@ -119,18 +119,18 @@
       <span></span><span></span><span></span>
     </button>
     <ul class="nav-links" id="navLinks">
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Work</a></li>
-      <li><a href="#publications">Research</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#stack">Stack</a></li>
-      <li><a href="#contact" class="nav-cta">Contact</a></li>
+      <li><a href="#about" data-nav="about">About</a></li>
+      <li><a href="#skills" data-nav="skills">Skills</a></li>
+      <li><a href="#projects" data-nav="projects">Work</a></li>
+      <li><a href="#publications" data-nav="publications">Research</a></li>
+      <li><a href="#experience" data-nav="experience">Experience</a></li>
+      <li><a href="#stack" data-nav="stack">Stack</a></li>
+      <li><a href="#contact" data-nav="contact" class="nav-cta">Contact</a></li>
     </ul>
   </nav>
 
   <header class="hero" id="home">
-    <div class="hero-banner">
+    <div class="hero-banner hero-enter" style="--enter-order: 0">
       <picture>
         <source media="(max-width: 768px)" srcset="assets/images/background.png">
         <img
@@ -149,22 +149,22 @@
     <div class="hero-body">
       <div class="container hero-layout">
         <div class="hero-intro">
-          <div class="profile-wrapper">
+          <div class="profile-wrapper hero-enter" style="--enter-order: 1">
             <picture>
               <source srcset="assets/images/profile.webp" type="image/webp">
               <img src="assets/images/profile.jpg" alt="Aroh Sunday — Backend Engineer, Montreal, Canada" class="profile-photo" width="120" height="120">
             </picture>
           </div>
-          <span class="role-pill">Senior Backend Engineer</span>
-          <h1>Aroh Sunday</h1>
-          <p class="headline">I build backend systems that scale, AI that ships, and protocols that earn trust</p>
-          <p class="hero-bio">I design and build distributed systems, production AI pipelines, and blockchain trust layers. 9+ years architecting systems across fintech, healthcare, logistics, climate tech, and research.</p>
-          <p class="location">
+          <span class="role-pill hero-enter" style="--enter-order: 2">Senior Backend Engineer</span>
+          <h1 class="hero-enter" style="--enter-order: 3">Aroh Sunday</h1>
+          <p class="headline hero-enter" style="--enter-order: 4">I build backend systems that scale, AI that ships, and protocols that earn trust</p>
+          <p class="hero-bio hero-enter" style="--enter-order: 5">I design and build distributed systems, production AI pipelines, and blockchain trust layers. 9+ years architecting systems across fintech, healthcare, logistics, climate tech, and research.</p>
+          <p class="location hero-enter" style="--enter-order: 6">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
             Montreal, Quebec, Canada
           </p>
 
-          <div class="hero-stats">
+          <div class="hero-stats hero-enter" style="--enter-order: 7">
             <div class="stat-item">
               <span class="stat-number" data-target="9">0</span><span class="stat-suffix">+</span>
               <span class="stat-label">Years building</span>
@@ -183,16 +183,16 @@
             </div>
           </div>
 
-          <p class="current-role">Research @ <strong>BusPas Inc.</strong> · SE4AI Fellow @ <strong>Polytechnique Montréal</strong></p>
+          <p class="current-role hero-enter" style="--enter-order: 8">Research @ <strong>BusPas Inc.</strong> · SE4AI Fellow @ <strong>Polytechnique Montréal</strong></p>
 
-          <div class="hero-actions">
+          <div class="hero-actions hero-enter" style="--enter-order: 9">
             <a href="#contact" class="btn btn-primary">Get in Touch</a>
             <a href="https://github.com/melitus" target="_blank" rel="noopener noreferrer" class="btn btn-outline">GitHub</a>
             <a href="https://scholar.google.com/citations?user=jzp04ekAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Scholar</a>
           </div>
         </div>
 
-        <div class="arch-diagram" aria-label="Backend system architecture diagram">
+        <div class="arch-diagram hero-enter" style="--enter-order: 10" aria-label="Backend system architecture diagram">
           <p class="arch-label">system.architecture<span class="arch-live-dot"></span></p>
           <div class="arch-flow" id="archFlow">
             <div class="arch-node" data-step="0"><span class="arch-icon">📱</span><span class="arch-name">Client</span><span class="arch-pulse"></span></div>
@@ -214,7 +214,7 @@
         </div>
       </div>
 
-      <a href="#about" class="scroll-hint" aria-label="Scroll to about section">
+      <a href="#about" class="scroll-hint hero-enter" style="--enter-order: 11" aria-label="Scroll to about section">
         <span>scroll</span>
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
       </a>
@@ -242,15 +242,15 @@
               <div class="about-stat"><strong>5</strong><span>Industry domains</span></div>
             </div>
           </div>
-          <div class="terminal-block">
-            <div class="terminal-line"><span class="terminal-prompt">❯</span> name <span class="terminal-arrow">→</span> Aroh Sunday</div>
-            <div class="terminal-line"><span class="terminal-prompt">❯</span> role <span class="terminal-arrow">→</span> Senior Backend Engineer</div>
-            <div class="terminal-line"><span class="terminal-prompt">❯</span> location <span class="terminal-arrow">→</span> Montreal, Canada</div>
-            <div class="terminal-line"><span class="terminal-prompt">❯</span> experience <span class="terminal-arrow">→</span> 9+ years</div>
-            <div class="terminal-line"><span class="terminal-prompt">❯</span> education <span class="terminal-arrow">→</span> Polytechnique Montréal (M.Eng)</div>
-            <div class="terminal-line"><span class="terminal-prompt">❯</span> certifications <span class="terminal-arrow">→</span> AWS · Solidity · Terraform · MongoDB</div>
-            <div class="terminal-line"><span class="terminal-prompt">❯</span> focus <span class="terminal-arrow">→</span> Distributed Systems, Production AI, Web3</div>
-            <div class="terminal-line terminal-cursor"><span class="terminal-prompt">❯</span> <span class="cursor-blink">_</span></div>
+          <div class="terminal-block" id="terminalBlock">
+            <div class="terminal-line"><span class="terminal-prompt">❯</span> <span class="terminal-text" data-typed="name → Aroh Sunday"></span></div>
+            <div class="terminal-line"><span class="terminal-prompt">❯</span> <span class="terminal-text" data-typed="role → Senior Backend Engineer"></span></div>
+            <div class="terminal-line"><span class="terminal-prompt">❯</span> <span class="terminal-text" data-typed="location → Montreal, Canada"></span></div>
+            <div class="terminal-line"><span class="terminal-prompt">❯</span> <span class="terminal-text" data-typed="experience → 9+ years"></span></div>
+            <div class="terminal-line"><span class="terminal-prompt">❯</span> <span class="terminal-text" data-typed="education → Polytechnique Montréal (M.Eng)"></span></div>
+            <div class="terminal-line"><span class="terminal-prompt">❯</span> <span class="terminal-text" data-typed="certifications → AWS · Solidity · Terraform · MongoDB"></span></div>
+            <div class="terminal-line"><span class="terminal-prompt">❯</span> <span class="terminal-text" data-typed="focus → Distributed Systems, Production AI, Web3"></span></div>
+            <div class="terminal-line terminal-cursor-line"><span class="terminal-prompt">❯</span> <span class="cursor-blink">_</span></div>
           </div>
         </div>
       </div>
@@ -368,7 +368,12 @@
             </div>
           </a>
           <a href="https://issuu.com/xrplcommons/docs/xrpl_community_mag_5_-_defi_expectations?fr=xKAE9_zU1NQ" target="_blank" rel="noopener noreferrer" class="magazine-card">
-            <img src="assets/images/CM5_CONTRIBUTOR_VISUAL_1_TWITTER.png" alt="Aroh Sunday featured in XRPL Commons Magazine Issue 5 — DeFi Expectations" class="magazine-visual" loading="lazy" width="280" height="220">
+            <div class="magazine-visual-wrap">
+              <img src="assets/images/CM5_CONTRIBUTOR_VISUAL_1_TWITTER.png" alt="Aroh Sunday featured in XRPL Commons Magazine Issue 5 — DeFi Expectations" class="magazine-visual" loading="lazy" width="280" height="220">
+              <div class="magazine-overlay" aria-hidden="true">
+                <span class="magazine-overlay-text">Read magazine →</span>
+              </div>
+            </div>
             <div class="magazine-info">
               <span class="project-badge">XRPL Commons</span>
               <h3>Community Magazine — Issue 5</h3>
@@ -574,47 +579,55 @@
 
         <div class="credentials-block">
           <h3 class="credentials-subheading">Certifications</h3>
-          <div class="cert-grid">
-            <span class="cert-badge">Diploma in Computer Engineering</span>
-            <span class="cert-badge">Project Management — Primavera P6 and MS Project</span>
-            <span class="cert-badge">MongoDB M103: Basic Cluster Administration</span>
-            <span class="cert-badge">API Security Architect</span>
-            <span class="cert-badge">AWS Lambda Foundation</span>
-            <span class="cert-badge">Lab — Terraform for Beginners</span>
-            <span class="cert-badge">AWS Knowledge: Serverless</span>
-            <span class="cert-badge">Expert Solidity Bootcamp</span>
-            <span class="cert-badge">Senior Engineer to Lead — Maven</span>
-            <span class="cert-badge">Blockchain Masterclass</span>
-            <span class="cert-badge">GitHub Profile Ownership Verified (Top 0.83%)</span>
-            <span class="cert-badge">Intro to Machine Learning</span>
-            <span class="cert-badge">Problem Solver</span>
+          <div class="cert-grid" id="certGrid">
+            <span class="cert-badge cert-pop">Diploma in Computer Engineering</span>
+            <span class="cert-badge cert-pop">Project Management — Primavera P6 and MS Project</span>
+            <span class="cert-badge cert-pop">MongoDB M103: Basic Cluster Administration</span>
+            <span class="cert-badge cert-pop">API Security Architect</span>
+            <span class="cert-badge cert-pop">AWS Lambda Foundation</span>
+            <span class="cert-badge cert-pop">Lab — Terraform for Beginners</span>
+            <span class="cert-badge cert-pop">AWS Knowledge: Serverless</span>
+            <span class="cert-badge cert-pop">Expert Solidity Bootcamp</span>
+            <span class="cert-badge cert-pop">Senior Engineer to Lead — Maven</span>
+            <span class="cert-badge cert-pop">Blockchain Masterclass</span>
+            <span class="cert-badge cert-pop">GitHub Profile Ownership Verified (Top 0.83%)</span>
+            <span class="cert-badge cert-pop">Intro to Machine Learning</span>
+            <span class="cert-badge cert-pop">Problem Solver</span>
           </div>
         </div>
       </div>
     </section>
 
     <section class="section contact-section" id="contact">
-      <div class="container">
-        <p class="availability-pill">Available for opportunities</p>
+      <div class="container contact-reveal">
+        <p class="availability-pill"><span class="avail-dot"></span>Available for opportunities</p>
         <div class="contact-card">
-          <h2>Let's architect something together</h2>
-          <p>Looking for a senior backend engineer or want to discuss distributed systems, production AI, or blockchain? I'd love to connect.</p>
+          <h2 class="contact-title">Let's architect something together</h2>
+          <p class="contact-desc">Looking for a senior backend engineer or want to discuss distributed systems, production AI, or blockchain? I'd love to connect.</p>
           <div class="contact-links">
             <a href="mailto:asmelitus@gmail.com" class="contact-link">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-              asmelitus@gmail.com
+              <span class="contact-link-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </span>
+              <span class="contact-link-label">asmelitus@gmail.com</span>
             </a>
             <a href="https://www.linkedin.com/in/arohsunday" target="_blank" rel="noopener noreferrer" class="contact-link">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-              LinkedIn
+              <span class="contact-link-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              </span>
+              <span class="contact-link-label">LinkedIn</span>
             </a>
             <a href="https://github.com/melitus" target="_blank" rel="noopener noreferrer" class="contact-link">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-              GitHub
+              <span class="contact-link-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </span>
+              <span class="contact-link-label">GitHub</span>
             </a>
             <a href="https://scholar.google.com/citations?user=jzp04ekAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" class="contact-link">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.838 3.94L12 6.922l7.162 6.518L24 9.5 12 0z"/></svg>
-              Google Scholar
+              <span class="contact-link-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.838 3.94L12 6.922l7.162 6.518L24 9.5 12 0z"/></svg>
+              </span>
+              <span class="contact-link-label">Google Scholar</span>
             </a>
           </div>
         </div>
