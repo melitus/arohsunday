@@ -762,10 +762,27 @@ img {
   transition: color 0.25s ease;
 }
 
+.magazine-info a {
+  color: var(--accent-primary);
+  font-weight: 500;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.magazine-info a:hover,
+.timeline-content a:hover,
 .about-copy a:hover,
+.about-intro a:hover,
 .current-role a:hover,
 .education-note a:hover {
   color: var(--accent-secondary);
+}
+
+.timeline-content a {
+  color: var(--accent-primary);
+  font-weight: 500;
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
 
 .about-stats {
