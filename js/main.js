@@ -31,9 +31,40 @@
   );
 
   document.querySelectorAll(
-    '.intent-card, .project-card, .timeline-item, .skill-group, .education-card, .scholar-card, .magazine-card, .award-card'
+    '.expertise-card, .project-card, .timeline-item, .stack-category, .education-card, .scholar-card, .magazine-card, .award-card, .arch-diagram, .terminal-block'
   ).forEach((el) => {
     el.classList.add('fade-in');
     observer.observe(el);
   });
+
+  const statObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        const el = entry.target;
+        const target = parseInt(el.dataset.target, 10);
+        if (Number.isNaN(target) || el.dataset.counted) return;
+        el.dataset.counted = 'true';
+        animateCounter(el, target);
+        statObserver.unobserve(el);
+      });
+    },
+    { threshold: 0.5 }
+  );
+
+  document.querySelectorAll('.stat-number[data-target]').forEach((el) => {
+    statObserver.observe(el);
+  });
+
+  function animateCounter(el, target) {
+    const duration = 1200;
+    const start = performance.now();
+    function tick(now) {
+      const progress = Math.min((now - start) / duration, 1);
+      const eased = 1 - Math.pow(1 - progress, 3);
+      el.textContent = Math.round(eased * target);
+      if (progress < 1) requestAnimationFrame(tick);
+    }
+    requestAnimationFrame(tick);
+  }
 })();

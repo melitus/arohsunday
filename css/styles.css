@@ -178,22 +178,198 @@ img {
 }
 
 .hero-body {
-  background: var(--bg-primary);
-  padding: 0 1.5rem 3.5rem;
+  background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
+  padding: 2.5rem 1.5rem 4rem;
+  position: relative;
 }
 
-.hero-content {
-  position: relative;
-  z-index: 1;
-  max-width: 720px;
-  margin: -72px auto 0;
+.hero-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.hero-intro {
+  text-align: left;
+}
+
+.hero-intro .profile-wrapper {
+  width: 96px;
+  height: 96px;
+  margin: 0 0 1rem;
+}
+
+.role-pill {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--accent-primary);
+  background: var(--accent-light);
+  padding: 0.35rem 0.85rem;
+  border-radius: 20px;
+  margin-bottom: 0.75rem;
+}
+
+.hero-intro h1 {
+  text-align: left;
+  font-size: clamp(2.25rem, 4vw, 3.25rem);
+  margin-bottom: 0.5rem;
+}
+
+.hero-intro .headline {
+  text-align: left;
+  font-size: 1.1rem;
+  color: var(--text-primary);
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.hero-bio {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 0.75rem;
+  max-width: 540px;
+}
+
+.hero-intro .location {
+  margin-bottom: 1.5rem;
+}
+
+.hero-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+  padding: 1.25rem 0;
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.stat-item {
   text-align: center;
 }
 
+.stat-number {
+  font-size: 1.75rem;
+  font-weight: 800;
+  background: var(--accent-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.stat-suffix {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--accent-primary);
+}
+
+.stat-label {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-top: 0.15rem;
+}
+
+.current-role {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+}
+
+.current-role strong {
+  color: var(--text-primary);
+}
+
+.hero-intro .hero-actions {
+  justify-content: flex-start;
+}
+
+.arch-diagram {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 1.75rem;
+  box-shadow: var(--shadow-md);
+}
+
+.arch-label {
+  font-family: ui-monospace, 'Cascadia Code', monospace;
+  font-size: 0.75rem;
+  color: var(--accent-primary);
+  margin-bottom: 1.25rem;
+  text-transform: lowercase;
+}
+
+.arch-flow {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.arch-node {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.65rem 1rem;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: var(--transition);
+}
+
+.arch-node:hover {
+  border-color: var(--accent-primary);
+  background: var(--accent-light);
+}
+
+.arch-icon {
+  font-size: 1.1rem;
+}
+
+.arch-arrow {
+  text-align: center;
+  color: var(--accent-primary);
+  font-size: 0.85rem;
+  line-height: 1;
+  opacity: 0.6;
+}
+
+.scroll-hint {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  margin: 2.5rem auto 0;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--text-secondary);
+  animation: bounce 2s infinite;
+}
+
+.scroll-hint svg {
+  opacity: 0.6;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(6px); }
+}
+
 .profile-wrapper {
-  width: 152px;
-  height: 152px;
-  margin: 0 auto 1.25rem;
   border-radius: 50%;
   overflow: hidden;
   border: 4px solid #fff;
@@ -206,7 +382,8 @@ img {
   object-fit: cover;
 }
 
-.hero h1 {
+.hero h1,
+.hero-intro h1 {
   font-size: clamp(2rem, 5vw, 3rem);
   font-weight: 800;
   background: var(--accent-gradient);
@@ -289,8 +466,25 @@ img {
   padding: 5rem 0;
 }
 
-.section:nth-child(even) {
+.about-section,
+.projects-section,
+.experience-section,
+.education-section {
   background: var(--bg-secondary);
+}
+
+.skills-section,
+.publications-section,
+.stack-section,
+.contact-section {
+  background: var(--bg-primary);
+}
+
+.section-subtitle {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  max-width: 520px;
+  margin: 0.75rem auto 0;
 }
 
 .section-header {
@@ -317,7 +511,136 @@ img {
   margin: 0 auto;
 }
 
-/* ── Intent ── */
+/* ── About ── */
+.about-layout {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 2.5rem;
+  align-items: start;
+}
+
+.about-copy p {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.75;
+  margin-bottom: 1rem;
+}
+
+.about-intro a {
+  color: var(--accent-primary);
+  font-weight: 500;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.about-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.about-stat {
+  text-align: center;
+}
+
+.about-stat strong {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--accent-primary);
+}
+
+.about-stat span {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.terminal-block {
+  background: #0f172a;
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  font-family: ui-monospace, 'Cascadia Code', 'Fira Code', monospace;
+  font-size: 0.82rem;
+  line-height: 1.9;
+  box-shadow: var(--shadow-lg);
+}
+
+.terminal-line {
+  color: #94a3b8;
+}
+
+.terminal-prompt {
+  color: var(--accent-secondary);
+  margin-right: 0.35rem;
+}
+
+.terminal-arrow {
+  color: #64748b;
+  margin: 0 0.35rem;
+}
+
+.terminal-line:not(.terminal-cursor) {
+  color: #e2e8f0;
+}
+
+.cursor-blink {
+  animation: blink 1s step-end infinite;
+  color: var(--accent-secondary);
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+/* ── Expertise (numbered skills) ── */
+.expertise-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.25rem;
+}
+
+.expertise-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 1.75rem;
+  transition: var(--transition);
+  box-shadow: var(--shadow-sm);
+  position: relative;
+}
+
+.expertise-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent-primary);
+  box-shadow: var(--shadow-lg);
+}
+
+.expertise-num {
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: var(--accent-primary);
+  opacity: 0.7;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.expertise-card h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+}
+
+.expertise-card p {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* ── Intent (legacy, kept for compat) ── */
 .intent-summary {
   font-size: 1.05rem;
   color: var(--text-secondary);
@@ -438,10 +761,84 @@ img {
 
 .project-link {
   display: inline-block;
-  margin-top: 1rem;
+  margin-top: 0.75rem;
   font-size: 0.85rem;
   font-weight: 600;
   color: var(--accent-primary);
+}
+
+.project-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-top: 0.75rem;
+}
+
+.project-stack span {
+  font-size: 0.7rem;
+  font-weight: 500;
+  padding: 0.2rem 0.55rem;
+  background: var(--bg-secondary);
+  color: var(--text-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+}
+
+/* ── Tech Stack Marquee ── */
+.marquee-wrap {
+  overflow: hidden;
+  margin-bottom: 2.5rem;
+  mask-image: linear-gradient(90deg, transparent, #000 10%, #000 90%, transparent);
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 10%, #000 90%, transparent);
+}
+
+.marquee-track {
+  display: flex;
+  gap: 0.75rem;
+  width: max-content;
+  animation: marquee 40s linear infinite;
+}
+
+.marquee-track span {
+  flex-shrink: 0;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  color: var(--text-secondary);
+  white-space: nowrap;
+}
+
+.marquee-wrap:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.stack-categories {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.25rem;
+}
+
+.stack-category {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.stack-category h3 {
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-bottom: 0.85rem;
+  color: var(--text-primary);
 }
 
 /* ── Publications ── */
@@ -849,6 +1246,20 @@ img {
   border-color: transparent;
 }
 
+.availability-pill {
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--success);
+  margin-bottom: 1rem;
+}
+
+.availability-pill::before {
+  content: '● ';
+}
+
 /* ── Contact ── */
 .contact-card {
   text-align: center;
@@ -968,6 +1379,41 @@ img {
     pointer-events: auto;
   }
 
+  .hero-layout,
+  .about-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-intro {
+    text-align: center;
+  }
+
+  .hero-intro .profile-wrapper {
+    margin: 0 auto 1rem;
+  }
+
+  .hero-intro h1,
+  .hero-intro .headline {
+    text-align: center;
+  }
+
+  .hero-bio {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero-intro .hero-actions {
+    justify-content: center;
+  }
+
+  .about-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .magazine-card {
     grid-template-columns: 1fr;
   }
@@ -1003,16 +1449,11 @@ img {
 
   .hero-banner-fade {
     height: 48px;
-    background: linear-gradient(to bottom, transparent, #ffffff);
+    background: linear-gradient(to bottom, transparent, #f8fafc);
   }
 
-  .hero-content {
-    margin-top: -56px;
-  }
-
-  .profile-wrapper {
-    width: 128px;
-    height: 128px;
+  .hero-body {
+    padding-top: 1.5rem;
   }
 }
 

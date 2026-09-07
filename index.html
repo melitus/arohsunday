@@ -119,12 +119,12 @@
       <span></span><span></span><span></span>
     </button>
     <ul class="nav-links" id="navLinks">
-      <li><a href="#intent">Intent</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#publications">Publications</a></li>
-      <li><a href="#experience">Experience</a></li>
+      <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
-      <li><a href="#credentials">Credentials</a></li>
+      <li><a href="#projects">Work</a></li>
+      <li><a href="#publications">Research</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#stack">Stack</a></li>
       <li><a href="#contact" class="nav-cta">Contact</a></li>
     </ul>
   </nav>
@@ -145,62 +145,154 @@
       </picture>
       <div class="hero-banner-fade" aria-hidden="true"></div>
     </div>
+
     <div class="hero-body">
-      <div class="container hero-content">
-        <div class="profile-wrapper">
-          <picture>
-            <source srcset="assets/images/profile.webp" type="image/webp">
-            <img src="assets/images/profile.jpg" alt="Aroh Sunday — Backend Engineer, Montreal, Canada" class="profile-photo" width="160" height="160">
-          </picture>
+      <div class="container hero-layout">
+        <div class="hero-intro">
+          <div class="profile-wrapper">
+            <picture>
+              <source srcset="assets/images/profile.webp" type="image/webp">
+              <img src="assets/images/profile.jpg" alt="Aroh Sunday — Backend Engineer, Montreal, Canada" class="profile-photo" width="120" height="120">
+            </picture>
+          </div>
+          <span class="role-pill">Senior Backend Engineer</span>
+          <h1>Aroh Sunday</h1>
+          <p class="headline">I build backend systems that scale, AI that ships, and protocols that earn trust</p>
+          <p class="hero-bio">I design and build distributed systems, production AI pipelines, and blockchain trust layers. 9+ years architecting systems across fintech, healthcare, logistics, climate tech, and research.</p>
+          <p class="location">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Montreal, Quebec, Canada
+          </p>
+
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-number" data-target="9">0</span><span class="stat-suffix">+</span>
+              <span class="stat-label">Years building</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number" data-target="12">0</span><span class="stat-suffix">+</span>
+              <span class="stat-label">Certifications</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number" data-target="6">0</span><span class="stat-suffix">+</span>
+              <span class="stat-label">Products shipped</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number" data-target="5">0</span>
+              <span class="stat-label">Industry domains</span>
+            </div>
+          </div>
+
+          <p class="current-role">Research @ <strong>BusPas Inc.</strong> · SE4AI Fellow @ <strong>Polytechnique Montréal</strong></p>
+
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">Get in Touch</a>
+            <a href="https://github.com/melitus" target="_blank" rel="noopener noreferrer" class="btn btn-outline">GitHub</a>
+            <a href="https://scholar.google.com/citations?user=jzp04ekAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Scholar</a>
+          </div>
         </div>
-        <h1>Aroh Sunday</h1>
-        <p class="headline">I build backend systems that scale, AI that ships, and protocols that earn trust</p>
-        <p class="location">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-          Montreal, Quebec, Canada
-        </p>
-        <div class="hero-actions">
-          <a href="#contact" class="btn btn-primary">Get in Touch</a>
-          <a href="https://scholar.google.com/citations?user=jzp04ekAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Google Scholar</a>
-          <a href="https://www.linkedin.com/in/arohsunday" target="_blank" rel="noopener noreferrer" class="btn btn-outline">LinkedIn</a>
+
+        <div class="arch-diagram" aria-label="Backend system architecture diagram">
+          <p class="arch-label">system.architecture</p>
+          <div class="arch-flow">
+            <div class="arch-node"><span class="arch-icon">📱</span><span>Client</span></div>
+            <div class="arch-arrow">→</div>
+            <div class="arch-node"><span class="arch-icon">🔀</span><span>API Gateway</span></div>
+            <div class="arch-arrow">→</div>
+            <div class="arch-node"><span class="arch-icon">🔐</span><span>Auth / IAM</span></div>
+            <div class="arch-arrow">→</div>
+            <div class="arch-node"><span class="arch-icon">⚙️</span><span>Microservices</span></div>
+            <div class="arch-arrow">→</div>
+            <div class="arch-node"><span class="arch-icon">📨</span><span>Event Queue</span></div>
+            <div class="arch-arrow">→</div>
+            <div class="arch-node"><span class="arch-icon">🗄️</span><span>Data Layer</span></div>
+            <div class="arch-arrow">→</div>
+            <div class="arch-node"><span class="arch-icon">🧠</span><span>AI / ML</span></div>
+            <div class="arch-arrow">→</div>
+            <div class="arch-node"><span class="arch-icon">☁️</span><span>Cloud Infra</span></div>
+          </div>
         </div>
       </div>
+
+      <a href="#about" class="scroll-hint" aria-label="Scroll to about section">
+        <span>scroll</span>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+      </a>
     </div>
   </header>
 
   <main>
-    <section class="section intent-section" id="intent">
+    <section class="section about-section" id="about">
       <div class="container">
         <div class="section-header">
-          <span class="section-label">My Intent</span>
-          <h2>Engineering systems that scale, AI that ships, and trust that lasts</h2>
+          <span class="section-label">Background</span>
+          <h2>About Me</h2>
         </div>
-        <p class="intent-summary about-intro">
-          <strong>Aroh Sunday</strong> is a senior backend engineer based in Montreal, Quebec, Canada — known for work on production AI pipelines, distributed systems, and blockchain trust protocols. Projects include <a href="https://gamevoc.africa/">GameVoc Africa</a>, <a href="https://www.cribmd.com/">CribMD</a>, <a href="https://www.greenant.ai/">GreenAnt</a>, and contributions to the <a href="https://issuu.com/xrplcommons/docs/xrpl_community_mag_5_-_defi_expectations?fr=xKAE9_zU1NQ">XRPL Commons Magazine</a>. Research affiliations include Polytechnique Montréal (SE4AI CREATE) and BusPas Inc.
-        </p>
-        <p class="intent-summary">
-          Senior Software Engineer specializing in scalable, production-ready systems. I architect backend infrastructure that makes AI reliable and blockchain trustworthy — scaling microservices, distributed systems, and intelligent pipelines that drive real impact. Over 9+ years, I've built production systems across fintech, healthcare, logistics, and climate tech.
-        </p>
-        <div class="intent-grid">
-          <article class="intent-card">
-            <div class="intent-icon">⚡</div>
-            <h3>Resilient Systems</h3>
-            <p>Microservices, event-driven architectures, and distributed pipelines designed to handle real-world scale and failure modes.</p>
+        <div class="about-layout">
+          <div class="about-copy">
+            <p class="about-intro">
+              <strong>Aroh Sunday</strong> is a senior backend engineer based in Montreal, Quebec, Canada — known for production AI pipelines, distributed systems, and blockchain trust protocols. Projects include <a href="https://gamevoc.africa/">GameVoc Africa</a>, <a href="https://www.cribmd.com/">CribMD</a>, <a href="https://www.greenant.ai/">GreenAnt</a>, and contributions to the <a href="https://issuu.com/xrplcommons/docs/xrpl_community_mag_5_-_defi_expectations?fr=xKAE9_zU1NQ">XRPL Commons Magazine</a>.
+            </p>
+            <p>My work sits at the intersection of backend architecture, cloud infrastructure, and intelligent systems. I architect microservices, design event-driven pipelines, build AI-powered workflows, and develop smart contracts that solve real trust problems.</p>
+            <p>Currently at BusPas Inc. through Mitacs Accelerate, I build MAS-DQA — a multi-agent framework for verifiable data quality in mobility streams. As an SE4AI CREATE Fellow at Polytechnique Montréal, I engineer AI-based software systems for production environments.</p>
+            <div class="about-stats">
+              <div class="about-stat"><strong>9+</strong><span>Years of experience</span></div>
+              <div class="about-stat"><strong>12+</strong><span>Certifications</span></div>
+              <div class="about-stat"><strong>6+</strong><span>Products shipped</span></div>
+              <div class="about-stat"><strong>5</strong><span>Industry domains</span></div>
+            </div>
+          </div>
+          <div class="terminal-block">
+            <div class="terminal-line"><span class="terminal-prompt">❯</span> name <span class="terminal-arrow">→</span> Aroh Sunday</div>
+            <div class="terminal-line"><span class="terminal-prompt">❯</span> role <span class="terminal-arrow">→</span> Senior Backend Engineer</div>
+            <div class="terminal-line"><span class="terminal-prompt">❯</span> location <span class="terminal-arrow">→</span> Montreal, Canada</div>
+            <div class="terminal-line"><span class="terminal-prompt">❯</span> experience <span class="terminal-arrow">→</span> 9+ years</div>
+            <div class="terminal-line"><span class="terminal-prompt">❯</span> education <span class="terminal-arrow">→</span> Polytechnique Montréal (M.Eng)</div>
+            <div class="terminal-line"><span class="terminal-prompt">❯</span> certifications <span class="terminal-arrow">→</span> AWS · Solidity · Terraform · MongoDB</div>
+            <div class="terminal-line"><span class="terminal-prompt">❯</span> focus <span class="terminal-arrow">→</span> Distributed Systems, Production AI, Web3</div>
+            <div class="terminal-line terminal-cursor"><span class="terminal-prompt">❯</span> <span class="cursor-blink">_</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Skills</span>
+          <h2>Core Expertise</h2>
+          <p class="section-subtitle">The domains and disciplines I work across</p>
+        </div>
+        <div class="expertise-grid">
+          <article class="expertise-card">
+            <span class="expertise-num">01</span>
+            <h3>Distributed Systems</h3>
+            <p>Microservices, event-driven architecture, Kafka, and scalable API platforms</p>
           </article>
-          <article class="intent-card">
-            <div class="intent-icon">🧠</div>
+          <article class="expertise-card">
+            <span class="expertise-num">02</span>
             <h3>Production AI</h3>
-            <p>Backend pipelines, data systems, and deployment layers that make LLMs and agentic AI reliable at scale — not just demos.</p>
+            <p>LLM pipelines, agentic AI, multi-agent systems, and reliable ML deployment</p>
           </article>
-          <article class="intent-card">
-            <div class="intent-icon">🔗</div>
-            <h3>Trust &amp; Provenance</h3>
-            <p>Smart contracts and decentralized protocols that solve real identity, certification, and supply-chain trust problems.</p>
+          <article class="expertise-card">
+            <span class="expertise-num">03</span>
+            <h3>Backend Platforms</h3>
+            <p>Node.js, TypeScript, NestJS, Python, FastAPI, GraphQL, and gRPC</p>
           </article>
-          <article class="intent-card">
-            <div class="intent-icon">🔬</div>
-            <h3>Research Impact</h3>
-            <p>Contributing to academic research in AI, mobility data quality, and vocational education through international collaborations.</p>
+          <article class="expertise-card">
+            <span class="expertise-num">04</span>
+            <h3>Cloud Infrastructure</h3>
+            <p>AWS, GCP, Docker, Kubernetes, and production deployment at scale</p>
+          </article>
+          <article class="expertise-card">
+            <span class="expertise-num">05</span>
+            <h3>Web3 &amp; Blockchain</h3>
+            <p>Solidity, smart contracts, XRPL, DeFi, IPFS, and trust protocols</p>
+          </article>
+          <article class="expertise-card">
+            <span class="expertise-num">06</span>
+            <h3>Data &amp; Research</h3>
+            <p>Real-time streams, data quality governance, Flink, and academic research</p>
           </article>
         </div>
       </div>
@@ -209,43 +301,50 @@
     <section class="section projects-section" id="projects">
       <div class="container">
         <div class="section-header">
-          <span class="section-label">Selected Work</span>
-          <h2>Projects I've helped build</h2>
+          <span class="section-label">Portfolio</span>
+          <h2>Featured Work</h2>
+          <p class="section-subtitle">Selected projects across research, healthcare, climate, and blockchain</p>
         </div>
         <div class="projects-grid">
           <a href="https://gamevoc.africa/" target="_blank" rel="noopener noreferrer" class="project-card">
             <div class="project-badge">Research</div>
             <h3>GameVoc Africa</h3>
             <p>Interactive AI-powered vocational learning platform with gamified missions, micro-credentials, and blockchain-verified certifications.</p>
+            <div class="project-stack"><span>Python</span><span>AI</span><span>Blockchain</span><span>Micro-credentials</span></div>
             <span class="project-link">gamevoc.africa →</span>
           </a>
           <a href="https://www.cribmd.com/" target="_blank" rel="noopener noreferrer" class="project-card">
             <div class="project-badge">Healthcare</div>
             <h3>CribMD</h3>
             <p>Led migration from monolith to cloud-hosted microservices — enabling 10× traffic scale with Kafka, gRPC, MongoDB, and Redis.</p>
+            <div class="project-stack"><span>Node.js</span><span>Kafka</span><span>gRPC</span><span>Kubernetes</span><span>MongoDB</span></div>
             <span class="project-link">cribmd.com →</span>
           </a>
           <a href="https://houseafrica.io/" target="_blank" rel="noopener noreferrer" class="project-card">
             <div class="project-badge">PropTech</div>
             <h3>HouseAfrica</h3>
             <p>Real estate and property technology platform bringing transparency and digital infrastructure to African housing markets.</p>
+            <div class="project-stack"><span>PropTech</span><span>Platform</span><span>Africa</span></div>
             <span class="project-link">houseafrica.io →</span>
           </a>
           <article class="project-card project-card-static">
             <div class="project-badge">Mobility</div>
             <h3>DryvAfrica</h3>
             <p>Co-founded a microservice-based bus booking aggregator and metasearch engine — Apollo Federation, GraphQL, Kafka on AWS.</p>
+            <div class="project-stack"><span>GraphQL</span><span>Apollo</span><span>Kafka</span><span>AWS</span><span>TypeScript</span></div>
           </article>
           <a href="https://www.greenant.ai/" target="_blank" rel="noopener noreferrer" class="project-card">
             <div class="project-badge">Climate</div>
             <h3>GreenAnt</h3>
             <p>NFT marketplace backend for carbon tree tokens, spatial data optimization, and AI integration via FastAPI on GCP.</p>
+            <div class="project-stack"><span>FastAPI</span><span>NestJS</span><span>PostgreSQL</span><span>GCP</span><span>Ethereum</span></div>
             <span class="project-link">greenant.ai →</span>
           </a>
           <article class="project-card project-card-static">
             <div class="project-badge">Blockchain</div>
             <h3>Dymaxion</h3>
             <p>Smart contracts for E-Cert, MFSSIA identity protocol, logistics blockchain digital twin — Solidity, Polygon, EigenLayer, IPFS.</p>
+            <div class="project-stack"><span>Solidity</span><span>Polygon</span><span>IPFS</span><span>EigenLayer</span><span>Web3.js</span></div>
           </article>
         </div>
       </div>
@@ -387,52 +486,45 @@
       </div>
     </section>
 
-    <section class="section skills-section" id="skills">
+    <section class="section stack-section" id="stack">
       <div class="container">
         <div class="section-header">
-          <span class="section-label">Expertise</span>
-          <h2>Core skills &amp; technologies</h2>
+          <span class="section-label">Tools</span>
+          <h2>Tech Stack</h2>
+          <p class="section-subtitle">Technologies and tools I work with regularly</p>
         </div>
-        <div class="skills-grid">
-          <div class="skill-group">
-            <h3>AI &amp; Intelligence</h3>
-            <div class="skill-tags">
-              <span>Agentic AI Development</span>
-              <span>Large Language Models (LLM)</span>
-              <span>Software AI</span>
-            </div>
+
+        <div class="marquee-wrap" aria-hidden="true">
+          <div class="marquee-track">
+            <span>TypeScript</span><span>Node.js</span><span>NestJS</span><span>Python</span><span>FastAPI</span><span>GraphQL</span><span>gRPC</span><span>Kafka</span><span>Docker</span><span>Kubernetes</span><span>AWS</span><span>GCP</span><span>PostgreSQL</span><span>MongoDB</span><span>Redis</span><span>Solidity</span><span>Rust</span><span>XRPL</span><span>LLMs</span><span>Terraform</span>
+            <span>TypeScript</span><span>Node.js</span><span>NestJS</span><span>Python</span><span>FastAPI</span><span>GraphQL</span><span>gRPC</span><span>Kafka</span><span>Docker</span><span>Kubernetes</span><span>AWS</span><span>GCP</span><span>PostgreSQL</span><span>MongoDB</span><span>Redis</span><span>Solidity</span><span>Rust</span><span>XRPL</span><span>LLMs</span><span>Terraform</span>
           </div>
-          <div class="skill-group">
-            <h3>Backend &amp; APIs</h3>
-            <div class="skill-tags">
-              <span>Node.js</span>
-              <span>TypeScript</span>
-              <span>NestJS</span>
-              <span>Python</span>
-              <span>FastAPI</span>
-              <span>GraphQL</span>
-              <span>gRPC</span>
-              <span>Kafka</span>
-            </div>
+        </div>
+
+        <div class="stack-categories">
+          <div class="stack-category">
+            <h3>Languages</h3>
+            <div class="skill-tags"><span>TypeScript</span><span>JavaScript</span><span>Python</span><span>Solidity</span><span>Rust</span><span>Java</span></div>
           </div>
-          <div class="skill-group">
-            <h3>Infrastructure</h3>
-            <div class="skill-tags">
-              <span>Docker</span>
-              <span>Kubernetes</span>
-              <span>AWS</span>
-              <span>GCP</span>
-            </div>
+          <div class="stack-category">
+            <h3>Backend &amp; Frameworks</h3>
+            <div class="skill-tags"><span>Node.js</span><span>NestJS</span><span>FastAPI</span><span>Express</span><span>GraphQL</span><span>gRPC</span></div>
           </div>
-          <div class="skill-group">
-            <h3>Blockchain</h3>
-            <div class="skill-tags">
-              <span>Solidity</span>
-              <span>Rust</span>
-              <span>Smart Contracts</span>
-              <span>XRPL</span>
-              <span>DeFi</span>
-            </div>
+          <div class="stack-category">
+            <h3>Data &amp; Messaging</h3>
+            <div class="skill-tags"><span>Kafka</span><span>PostgreSQL</span><span>MongoDB</span><span>Redis</span><span>Flink</span><span>Elasticsearch</span></div>
+          </div>
+          <div class="stack-category">
+            <h3>Cloud &amp; DevOps</h3>
+            <div class="skill-tags"><span>AWS</span><span>GCP</span><span>Docker</span><span>Kubernetes</span><span>Terraform</span><span>CI/CD</span></div>
+          </div>
+          <div class="stack-category">
+            <h3>AI &amp; ML</h3>
+            <div class="skill-tags"><span>LLMs</span><span>Agentic AI</span><span>Multi-agent Systems</span><span>RAG</span><span>Software AI</span></div>
+          </div>
+          <div class="stack-category">
+            <h3>Web3 &amp; Blockchain</h3>
+            <div class="skill-tags"><span>Solidity</span><span>XRPL</span><span>DeFi</span><span>IPFS</span><span>Polygon</span><span>Web3.js</span></div>
           </div>
         </div>
       </div>
@@ -441,8 +533,8 @@
     <section class="section education-section" id="education">
       <div class="container">
         <div class="section-header">
-          <span class="section-label">Education</span>
-          <h2>Academic background</h2>
+          <span class="section-label">Education &amp; Recognition</span>
+          <h2>Academic background &amp; credentials</h2>
         </div>
         <div class="education-grid">
           <article class="education-card">
@@ -456,15 +548,6 @@
             <p class="education-institution">University of Nigeria, Nsukka</p>
             <p class="education-date">2007 — 2012</p>
           </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section credentials-section" id="credentials">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-label">Recognition</span>
-          <h2>Awards &amp; certifications</h2>
         </div>
 
         <div class="credentials-block">
@@ -492,6 +575,7 @@
         <div class="credentials-block">
           <h3 class="credentials-subheading">Certifications</h3>
           <div class="cert-grid">
+            <span class="cert-badge">Diploma in Computer Engineering</span>
             <span class="cert-badge">Project Management — Primavera P6 and MS Project</span>
             <span class="cert-badge">MongoDB M103: Basic Cluster Administration</span>
             <span class="cert-badge">API Security Architect</span>
@@ -511,9 +595,10 @@
 
     <section class="section contact-section" id="contact">
       <div class="container">
+        <p class="availability-pill">Available for opportunities</p>
         <div class="contact-card">
-          <h2>Let's build something resilient</h2>
-          <p>Open to research collaborations, senior engineering roles, and impactful backend architecture work.</p>
+          <h2>Let's architect something together</h2>
+          <p>Looking for a senior backend engineer or want to discuss distributed systems, production AI, or blockchain? I'd love to connect.</p>
           <div class="contact-links">
             <a href="mailto:asmelitus@gmail.com" class="contact-link">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
