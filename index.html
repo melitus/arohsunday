@@ -193,23 +193,23 @@
         </div>
 
         <div class="arch-diagram" aria-label="Backend system architecture diagram">
-          <p class="arch-label">system.architecture</p>
-          <div class="arch-flow">
-            <div class="arch-node"><span class="arch-icon">📱</span><span>Client</span></div>
-            <div class="arch-arrow">→</div>
-            <div class="arch-node"><span class="arch-icon">🔀</span><span>API Gateway</span></div>
-            <div class="arch-arrow">→</div>
-            <div class="arch-node"><span class="arch-icon">🔐</span><span>Auth / IAM</span></div>
-            <div class="arch-arrow">→</div>
-            <div class="arch-node"><span class="arch-icon">⚙️</span><span>Microservices</span></div>
-            <div class="arch-arrow">→</div>
-            <div class="arch-node"><span class="arch-icon">📨</span><span>Event Queue</span></div>
-            <div class="arch-arrow">→</div>
-            <div class="arch-node"><span class="arch-icon">🗄️</span><span>Data Layer</span></div>
-            <div class="arch-arrow">→</div>
-            <div class="arch-node"><span class="arch-icon">🧠</span><span>AI / ML</span></div>
-            <div class="arch-arrow">→</div>
-            <div class="arch-node"><span class="arch-icon">☁️</span><span>Cloud Infra</span></div>
+          <p class="arch-label">system.architecture<span class="arch-live-dot"></span></p>
+          <div class="arch-flow" id="archFlow">
+            <div class="arch-node" data-step="0"><span class="arch-icon">📱</span><span class="arch-name">Client</span><span class="arch-pulse"></span></div>
+            <div class="arch-arrow" data-step="0"><span class="arch-arrow-line"></span><span class="arch-arrow-head">▼</span></div>
+            <div class="arch-node" data-step="1"><span class="arch-icon">🔀</span><span class="arch-name">API Gateway</span><span class="arch-pulse"></span></div>
+            <div class="arch-arrow" data-step="1"><span class="arch-arrow-line"></span><span class="arch-arrow-head">▼</span></div>
+            <div class="arch-node" data-step="2"><span class="arch-icon">🔐</span><span class="arch-name">Auth / IAM</span><span class="arch-pulse"></span></div>
+            <div class="arch-arrow" data-step="2"><span class="arch-arrow-line"></span><span class="arch-arrow-head">▼</span></div>
+            <div class="arch-node" data-step="3"><span class="arch-icon">⚙️</span><span class="arch-name">Microservices</span><span class="arch-pulse"></span></div>
+            <div class="arch-arrow" data-step="3"><span class="arch-arrow-line"></span><span class="arch-arrow-head">▼</span></div>
+            <div class="arch-node" data-step="4"><span class="arch-icon">📨</span><span class="arch-name">Event Queue</span><span class="arch-pulse"></span></div>
+            <div class="arch-arrow" data-step="4"><span class="arch-arrow-line"></span><span class="arch-arrow-head">▼</span></div>
+            <div class="arch-node" data-step="5"><span class="arch-icon">🗄️</span><span class="arch-name">Data Layer</span><span class="arch-pulse"></span></div>
+            <div class="arch-arrow" data-step="5"><span class="arch-arrow-line"></span><span class="arch-arrow-head">▼</span></div>
+            <div class="arch-node" data-step="6"><span class="arch-icon">🧠</span><span class="arch-name">AI / ML</span><span class="arch-pulse"></span></div>
+            <div class="arch-arrow" data-step="6"><span class="arch-arrow-line"></span><span class="arch-arrow-head">▼</span></div>
+            <div class="arch-node" data-step="7"><span class="arch-icon">☁️</span><span class="arch-name">Cloud Infra</span><span class="arch-pulse"></span></div>
           </div>
         </div>
       </div>

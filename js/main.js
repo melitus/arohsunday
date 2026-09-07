@@ -67,4 +67,29 @@
     }
     requestAnimationFrame(tick);
   }
+
+  const archFlow = document.getElementById('archFlow');
+  if (archFlow && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    const archNodes = archFlow.querySelectorAll('.arch-node');
+    const archArrows = archFlow.querySelectorAll('.arch-arrow');
+    let archStep = 0;
+    const archTotal = archNodes.length;
+    const archInterval = 850;
+
+    function runArchStep() {
+      archNodes.forEach((node, i) => {
+        node.classList.toggle('active', i === archStep);
+        node.classList.toggle('passed', i < archStep);
+      });
+      archArrows.forEach((arrow, i) => {
+        arrow.classList.toggle('active', i === archStep);
+      });
+      archStep = (archStep + 1) % archTotal;
+    }
+
+    runArchStep();
+    setInterval(runArchStep, archInterval);
+  } else if (archFlow) {
+    archFlow.querySelector('.arch-node')?.classList.add('active');
+  }
 })();
