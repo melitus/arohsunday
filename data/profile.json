@@ -172,6 +172,18 @@
       "endDate": "2007"
     }
   ],
+  "collaborations": [
+    {
+      "name": "Estonian Economic Development Knowledge Graph",
+      "org": "Tallinn University (BFM) · Estonian MKM",
+      "contribution": "MKM DAO prototype for DKG access control and NLP pipeline for economic knowledge-graph entries"
+    },
+    {
+      "name": "Liquidity Hedge",
+      "org": "DLT2026 Workshop · Pula, Italy",
+      "contribution": "Protocol design, risk-neutral pricing model, and PoC for hedging concentrated-liquidity positions"
+    }
+  ],
   "certifications": [
     { "name": "Diploma in Computer Engineering" },
     { "name": "Project Management — Primavera P6 and MS Project" },
