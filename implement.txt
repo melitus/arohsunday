@@ -1,1 +1,10 @@
-this is another project to add at the porforlio section - **Smart Mobility Streaming Platform — BusPas** Designed and developed a modular, event-driven data platform for real-time smart mobility analytics, integrating transit data ingestion, stream processing, normalization, search, and observability. Built the pipeline around **Apache NiFi and Apache Kafka**, with **Elasticsearch/Kibana** for analytics and **Prometheus/Grafana** for monitoring.  **Tech Stack:** Apache NiFi, Apache Kafka, Python, Docker, Elasticsearch, Logstash, Kibana, Prometheus, Grafana, GTFS-RT
+**CruitParser — A Recruitment Automation Platform**
+
+an Application Tracking & Parser System
+* Designed and developed an automated recruitment platform for processing high-volume applications, extracting CV data, and assigning unique Applicant IDs.
+* Implemented multilingual email/CV processing for **English, French, and Portuguese**, with automated candidate data extraction and classification.
+* Built configurable screening rules for **age, nationality, education, and years of experience**, automatically identifying qualified, probable, and disqualified candidates.
+* Developed a **weighted scoring and ranking engine** that evaluates candidates against position-specific criteria and pre-screening questions.
+* Implemented multi-level recruitment workflows, enabling Recruitment Assistants, Consultants, and Specialists to progressively screen, score, and rank candidates.
+* Designed configurable parameters and scoring rules so recruitment teams can adapt the system to different job descriptions and hiring requirements.
+Tech: React, Nodejs, Nest, Typescript,Javascript, Redis, Docker, Aws, AI 
