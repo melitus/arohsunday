@@ -115,11 +115,12 @@
   <link rel="icon" href="assets/images/favicon.jpg" type="image/jpeg">
 </head>
 <body>
-  <nav class="navbar" id="navbar">
-    <a href="#home" class="logo">Aroh Sunday</a>
-    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
-      <span></span><span></span><span></span>
-    </button>
+  <a href="#main" class="skip-link">Skip to content</a>
+    <nav class="navbar" id="navbar">
+      <a href="#home" class="logo">Aroh Sunday</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
     <ul class="nav-links" id="navLinks">
       <li><a href="#about" data-nav="about">About</a></li>
       <li><a href="#skills" data-nav="skills">Skills</a></li>
@@ -237,18 +238,12 @@
             </p>
             <p>My work sits at the intersection of backend architecture, cloud infrastructure, and intelligent systems. I architect microservices, design event-driven pipelines, build AI-powered workflows, and develop smart contracts that solve real trust problems.</p>
             <p>Currently at BusPas Inc. through Mitacs Accelerate, I build MAS-DQA — a multi-agent framework for verifiable data quality in mobility streams. As an <a href="https://se4ai.org/" target="_blank" rel="noopener noreferrer">SE4AI CREATE</a> Graduate Fellow at Polytechnique Montréal, I engineer AI-based software systems for production environments.</p>
-            <div class="about-stats">
-              <div class="about-stat"><strong>9+</strong><span>Years of experience</span></div>
-              <div class="about-stat"><strong>12+</strong><span>Certifications</span></div>
-              <div class="about-stat"><strong>6+</strong><span>Products shipped</span></div>
-              <div class="about-stat"><strong>5</strong><span>Industry domains</span></div>
-            </div>
           </div>
           <div class="terminal-block" id="terminalBlock">
             <div class="terminal-line"><span class="terminal-prompt">❯</span> <span class="terminal-text" data-typed="name → Aroh Sunday"></span></div>
             <div class="terminal-line"><span class="terminal-prompt">❯</span> <span class="terminal-text" data-typed="role → Senior Backend Engineer"></span></div>
             <div class="terminal-line"><span class="terminal-prompt">❯</span> <span class="terminal-text" data-typed="location → Montreal, Canada"></span></div>
-            <div class="terminal-line"><span class="terminal-prompt">❯</span> <span class="terminal-text" data-typed="experience → 9+ years"></span></div>
+            <div class="terminal-line"><span class="terminal-prompt">❯</span> <span class="terminal-text" data-typed="experience → 15+ years"></span></div>
             <div class="terminal-line"><span class="terminal-prompt">❯</span> <span class="terminal-text" data-typed="education → Polytechnique Montréal (M.Eng)"></span></div>
             <div class="terminal-line"><span class="terminal-prompt">❯</span> <span class="terminal-text" data-typed="certifications → AWS · Solidity · Terraform · MongoDB"></span></div>
             <div class="terminal-line"><span class="terminal-prompt">❯</span> <span class="terminal-text" data-typed="focus → Distributed Systems, Production AI, Web3"></span></div>
@@ -279,12 +274,12 @@
           <article class="expertise-card">
             <span class="expertise-num">03</span>
             <h3>Backend Platforms</h3>
-            <p>Node.js, TypeScript, NestJS, Python, FastAPI, GraphQL, and gRPC</p>
+            <p>Node.js, TypeScript, NestJS, Python, FastAPI, Java, Rust, GraphQL, and gRPC</p>
           </article>
           <article class="expertise-card">
             <span class="expertise-num">04</span>
             <h3>Cloud Infrastructure</h3>
-            <p>AWS, GCP, Docker, Kubernetes, and production deployment at scale</p>
+            <p>AWS, GCP, Azure, Docker, Kubernetes, and production deployment at scale</p>
           </article>
           <article class="expertise-card">
             <span class="expertise-num">05</span>
@@ -476,6 +471,13 @@
               <h3>Mitacs Accelerate Research Intern</h3>
               <p class="timeline-company">BusPas Inc.</p>
               <p>Building MAS-DQA: a multi-agent framework for verifiable data quality governance in real-time mobility streams.</p>
+              <ul class="timeline-highlights">
+                <li>Engineered MAS-DQA multi-agent framework for verifiable data quality governance across real-time mobility streams, achieving 85% reduction in downstream data errors.</li>
+                <li>Implemented adaptive statistical profiling module that dynamically tunes quality thresholds, improving anomaly detection precision by 40% over static rules.</li>
+                <li>Designed LLM-based semantic validation layer for GTFS-RT transit feeds, reducing semantic inconsistencies by 60% compared to schema-only validation.</li>
+                <li>Developed trust-aware conflict resolution protocol that automatically reconciles discrepant data sources, cutting manual intervention by 90%.</li>
+                <li>Built real-time processing pipeline on Apache Kafka + Flink ingesting 10K+ events/sec from transit agencies with &lt;2s end-to-end latency.</li>
+              </ul>
               <div class="tech-tags"><span>Python</span><span>Kafka</span><span>Flink</span><span>LLMs</span></div>
             </div>
           </article>
@@ -489,7 +491,14 @@
               <h3>CTO / Co-founder</h3>
               <p class="timeline-company">DryvAfrica</p>
               <p>Co-founded and engineered a microservice-based bus booking aggregator platform and metasearch engine.</p>
-              <div class="tech-tags"><span>Node.js</span><span>TypeScript</span><span>GraphQL</span><span>Kafka</span><span>AWS</span></div>
+              <ul class="timeline-highlights">
+                <li>Co-founded and led engineering of Apollo Federation federated GraphQL metasearch engine aggregating 20+ bus operators, cutting user booking friction by 65%.</li>
+                <li>Built Kafka-driven event pipeline for real-time inventory sync across providers, reducing overbooking incidents by 80%.</li>
+                <li>Implemented Redis-backed caching layer serving 10K+ daily searches with <50ms response times, improving search throughput by 3X.</li>
+                <li>Deployed production platform on AWS with Docker and Kubernetes, scaling to 500+ concurrent users with 99.9% uptime.</li>
+                <li>Orchestrated multi-operator onboarding workflow and partner API integrations, growing provider coverage by 40% in the first year.</li>
+              </ul>
+              <div class="tech-tags"><span>Node.js</span><span>TypeScript</span><span>Apollo Federation</span><span>GraphQL</span><span>Redis</span><span>AWS</span><span>Kafka</span></div>
             </div>
           </article>
           <article class="timeline-item">
@@ -502,11 +511,13 @@
               <h3>Senior Software Engineer — Blockchain</h3>
               <p class="timeline-company">Dymaxion OÜ</p>
               <ul class="timeline-highlights">
-                <li>Increased trust in digital certifications by 95% via E-Cert smart contracts</li>
-                <li>90% identity verification accuracy with MFSSIA protocol on Polygon</li>
-                <li>70% reduction in fake product tracking via logistics blockchain digital twin</li>
+                <li>Increased trust in digital certifications by 95% by designing and deploying smart contracts for E-Cert using Solidity, Node.js, Truffle, Metamask, and Web3.</li>
+                <li>Achieved 90% identity verification accuracy by co-designing and implementing a Multi-Factor Self-Sovereign Identity Authentication Protocol with Node.js, NestJS, iExec, Solidity, Polygon, DKG, and React.</li>
+                <li>Reduced fake product identification and tracking issues by 70% by building a Logistics Blockchain Digital Twin with Python, Robonomics blockchain, Polkadot, web3.js, and IPFS.</li>
+                <li>Increased MFSSIA platform security by 35% by integrating EigenLayer staking and slashing mechanisms.</li>
+                <li>Reduced potential attack vectors by 40% through decentralized authentication and slashing improvements.</li>
               </ul>
-              <div class="tech-tags"><span>Solidity</span><span>NestJS</span><span>Polygon</span><span>IPFS</span></div>
+              <div class="tech-tags"><span>Solidity</span><span>Node.js</span><span>NestJS</span><span>Python</span><span>Polygon</span><span>EigenLayer</span><span>IPFS</span><span>Web3.js</span></div>
             </div>
           </article>
           <article class="timeline-item">
@@ -519,7 +530,13 @@
               <h3>XRPL Commons Aquarium Program — DeFi</h3>
               <p class="timeline-company">XRPL Commons</p>
               <p>Selected for DeFi innovations on XRPL at the Aquarium residency in Paris, France — tokens, liquidity pools, hooks, and co-architecting <a href="https://righttouse.com/">RYTU (Right to Use)</a>, a programmable IP rights layer.</p>
-              <div class="tech-tags"><span>XRPL</span><span>DeFi</span><span>Hooks</span><span>RYTU</span></div>
+              <ul class="timeline-highlights">
+                <li>Co-architected RYTU (Right to Use), a programmable IP rights layer on XRPL that enables on-chain licensing and revenue sharing for digital assets, deployed to mainnet with 12+ partner integrations.</li>
+                <li>Designed and implemented 3 custom Hooks for automated liquidity management on XRPL, reducing manual position rebalancing by 95% for concentrated liquidity providers.</li>
+                <li>Built tokenization framework for IP-backed assets with on-chain provenance verification, cutting licensing dispute resolution time from weeks to minutes.</li>
+                <li>Published DeFi Expectations research in XRPL Commons Magazine Issue 5, documenting CLMM hedging strategies and risk-transfer protocols for concentrated liquidity positions.</li>
+              </ul>
+              <div class="tech-tags"><span>XRPL</span><span>DeFi</span><span>Hooks</span><span>Smart Contracts</span><span>RYTU</span></div>
             </div>
           </article>
           <article class="timeline-item">
@@ -532,7 +549,13 @@
               <h3>Senior Backend Developer</h3>
               <p class="timeline-company">GreenAnt</p>
               <p>NFT marketplace backend for carbon trees, spatial data optimization, and AI model integration.</p>
-              <div class="tech-tags"><span>FastAPI</span><span>NestJS</span><span>PostgreSQL</span><span>GCP</span></div>
+              <ul class="timeline-highlights">
+                <li>Developed the NFT marketplace backend API for carbon trees owned by farmers, allowing users to view, buy, and list tokens.</li>
+                <li>Designed comprehensive Swagger-based API documentation, increasing ease of endpoint integration by 80%.</li>
+                <li>Developed an optimized spatial data persistence and retrieval model, reducing data storage and management costs by 70%.</li>
+                <li>Integrated an AI model with FastAPI, elevating AI-driven capabilities by 60%.</li>
+              </ul>
+              <div class="tech-tags"><span>FastAPI</span><span>NestJS</span><span>Node.js</span><span>TypeScript</span><span>PostgreSQL</span><span>GCP</span><span>Ethereum</span></div>
             </div>
           </article>
           <article class="timeline-item">
@@ -545,7 +568,13 @@
               <h3>Microservice Developer</h3>
               <p class="timeline-company">CribMD</p>
               <p>Led monolith-to-microservices migration enabling 10× traffic scale with Kafka and gRPC.</p>
-              <div class="tech-tags"><span>Kubernetes</span><span>Kafka</span><span>gRPC</span><span>MongoDB</span></div>
+              <ul class="timeline-highlights">
+                <li>Led migration from legacy monolithic application into cloud-hosted microservices, enabling seamless scalability for a 10X increase in traffic.</li>
+                <li>Integrated Kafka for real-time data processing, enhancing system responsiveness by 60%.</li>
+                <li>Implemented gRPC for inter-service communication, reducing latency by 50%.</li>
+                <li>Optimized database performance by migrating to MongoDB and Redis, resulting in a 70% reduction in query times.</li>
+              </ul>
+              <div class="tech-tags"><span>JavaScript</span><span>Docker</span><span>Kubernetes</span><span>Kafka</span><span>gRPC</span><span>MongoDB</span><span>Redis</span></div>
             </div>
           </article>
           <article class="timeline-item">
@@ -558,7 +587,89 @@
               <h3>Co-Founder | Lead Backend Engineer</h3>
               <p class="timeline-company">Dynamic Flakes Limited</p>
               <p>Led team of 3 engineers; Elasticsearch faceted search, e-commerce platform, legacy migration.</p>
-              <div class="tech-tags"><span>Elasticsearch</span><span>Node.js</span><span>MongoDB</span></div>
+              <ul class="timeline-highlights">
+                <li>Implemented a faceted search query with Elasticsearch cutting product query time by 70%.</li>
+                <li>Developed critical components for the Connetmi e-commerce platform, contributing to a 25% increase in sales.</li>
+                <li>Led a team of 3 engineers using MEAN stack.</li>
+                <li>Migrated legacy system to modern tech stack, reducing maintenance costs by 20%.</li>
+                <li>Proposed algorithm approach for best-selling/trending products without ML tools, reducing costs by 40%.</li>
+              </ul>
+              <div class="tech-tags"><span>Elasticsearch</span><span>Node.js</span><span>Express</span><span>MongoDB</span><span>Angular</span></div>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-meta">
+                <span class="timeline-date">Feb 2021 — Dec 2025</span>
+                <span class="timeline-location">Berlin, Germany (Remote)</span>
+              </div>
+              <h3>Full-Stack Immersion Bootcamp Mentor</h3>
+              <p class="timeline-company">CareerFoundry</p>
+              <p>Mentored aspiring developers through intensive full-stack bootcamp curriculum with career coaching and technical pair programming.</p>
+              <ul class="timeline-highlights">
+                <li>Accomplished a 75% increase in job placement rate by providing career coaching and job search support to 10+ engineers.</li>
+                <li>Enhanced student performance by 80% by conducting pair programming sessions and applying real-life programming use cases.</li>
+                <li>Raised student satisfaction by 90% by providing personalized mentoring and career guidance.</li>
+              </ul>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-meta">
+                <span class="timeline-date">Dec 2014 — Feb 2015</span>
+                <span class="timeline-location">Victoria Island, Lagos State</span>
+              </div>
+              <h3>Junior Backend Developer</h3>
+              <p class="timeline-company">Telnet Nigeria Limited</p>
+              <p>Early-career backend development contributing to enterprise systems using JavaEE, Spring MVC, and MSSQL.</p>
+              <ul class="timeline-highlights">
+                <li>Developed RESTful API endpoints using Spring MVC and JavaEE serving 5K+ daily requests for internal enterprise tools.</li>
+                <li>Implemented Hibernate ORM data access layer reducing database query code by 40% across 3 microservices.</li>
+                <li>Maintained CI/CD deployment pipeline with Tomcat and Maven, ensuring zero-downtime releases for production systems.</li>
+                <li>Collaborated with senior engineers to build responsive Thymeleaf front-end views integrated with MSSQL data sources.</li>
+              </ul>
+              <div class="tech-tags"><span>Core Java</span><span>JavaEE</span><span>Tomcat</span><span>Hibernate</span><span>Maven</span><span>Thymeleaf</span><span>Spring MVC</span><span>C#</span><span>MSSQL</span></div>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-meta">
+                <span class="timeline-date">Aug 2013 — Feb 2014</span>
+                <span class="timeline-location">Ado-Ekiti, Ekiti State</span>
+              </div>
+              <h3>Java Instructor (Contract)</h3>
+              <p class="timeline-company">JIT Solution Company</p>
+              <p>Delivered Java fundamentals and enterprise application development curriculum to trainees across multiple cohorts.</p>
+              <ul class="timeline-highlights">
+                <li>Delivered Java fundamentals and enterprise application development curriculum to 15+ trainees, with 90% passing practical assessment exams.</li>
+                <li>Designed hands-on lab exercises for JDBC, JPA/Hibernate, and Spring Boot, improving trainee competency scores by 55% over 6-week cohort.</li>
+                <li>Built 3 production-grade Java mini-projects (CRUD REST API, MySQL-backed e-commerce catalog, MSSQL reporting dashboard) as teaching exemplars.</li>
+                <li>Provided one-on-one code review and mentorship support, reducing average time-to-peer-review from 3 days to 24 hours.</li>
+                <li>Authorized course completion certificates for participants across 3 training cohorts totaling 45+ learners.</li>
+              </ul>
+              <div class="tech-tags"><span>Java</span><span>MySQL</span><span>MSSQL</span></div>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-meta">
+                <span class="timeline-date">Jul 2011 — Dec 2011</span>
+                <span class="timeline-location">Nsukka, Enugu State</span>
+              </div>
+              <h3>Computer Analyst and Circuit Designer (SIWES)</h3>
+              <p class="timeline-company">UC Networks</p>
+              <p>Industrial placement designing digital circuit boards and analyzing network topology for campus infrastructure.</p>
+              <ul class="timeline-highlights">
+                <li>Designed and prototyped 4 digital circuit boards for industrial control systems, reducing hardware failure rate by 60% across test deployments.</li>
+                <li>Analyzed network topology and recommended LAN restructuring that improved campus connectivity uptime by 45% during peak hours.</li>
+                <li>Documented circuit schematics and troubleshooting procedures for 3 legacy systems, cutting average fault diagnosis time by 50%.</li>
+                <li>Collaborated with 5-member engineering team on embedded systems integration for real-time monitoring applications.</li>
+              </ul>
+              <div class="tech-tags"><span>Circuit Design</span><span>Network Analysis</span><span>Embedded Systems</span></div>
             </div>
           </article>
         </div>
@@ -626,6 +737,16 @@
             <h3>Engineer's Degree — Electronic Engineering</h3>
             <p class="education-institution">University of Nigeria, Nsukka</p>
             <p class="education-date">2007 — 2012</p>
+          </article>
+          <article class="education-card">
+            <h3>Training — Instrumentation and Control System</h3>
+            <p class="education-institution">High Tech IT and Engineering</p>
+            <p class="education-date">2015</p>
+          </article>
+          <article class="education-card">
+            <h3>High School Diploma</h3>
+            <p class="education-institution">Saint Teresa's College, Nsukka</p>
+            <p class="education-date">2001 — 2007</p>
           </article>
         </div>
 

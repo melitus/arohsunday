@@ -44,8 +44,9 @@
   updateNavbar();
 
   navToggle.addEventListener('click', () => {
-    navLinks.classList.toggle('open');
+    const isOpen = navLinks.classList.toggle('open');
     navToggle.classList.toggle('active');
+    navToggle.setAttribute('aria-expanded', isOpen);
   });
 
   navLinks.querySelectorAll('a').forEach((link) => {
