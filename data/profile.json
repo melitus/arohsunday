@@ -36,7 +36,12 @@
         "Developed trust-aware conflict resolution protocol that automatically reconciles discrepant data sources, cutting manual intervention by 90%.",
         "Built real-time processing pipeline on Apache Kafka + Flink ingesting 10K+ events/sec from transit agencies with <2s end-to-end latency."
       ],
-      "technologies": ["Python", "Kafka", "Flink", "LLMs"]
+      "technologies": [
+        "Python",
+        "Kafka",
+        "Flink",
+        "LLMs"
+      ]
     },
     {
       "company": "DryvAfrica",
@@ -52,10 +57,18 @@
         "Deployed production platform on AWS with Docker and Kubernetes, scaling to 500+ concurrent users with 99.9% uptime.",
         "Orchestrated multi-operator onboarding workflow and partner API integrations, growing provider coverage by 40% in the first year."
       ],
-      "technologies": ["Node.js", "TypeScript", "Apollo Federation", "GraphQL", "Redis", "AWS", "Kafka"]
+      "technologies": [
+        "Node.js",
+        "TypeScript",
+        "Apollo Federation",
+        "GraphQL",
+        "Redis",
+        "AWS",
+        "Kafka"
+      ]
     },
     {
-      "company": "Dymaxion OÜ",
+      "company": "Dymaxion O\u00dc",
       "role": "Senior Software Engineer - Blockchain",
       "location": "Estonia",
       "startDate": "2022-02",
@@ -67,7 +80,16 @@
         "Increased MFSSIA platform security by 35% by integrating EigenLayer staking and slashing mechanisms.",
         "Reduced potential attack vectors by 40% through decentralized authentication and slashing improvements."
       ],
-      "technologies": ["Solidity", "Node.js", "NestJS", "Python", "Polygon", "EigenLayer", "IPFS", "Web3.js"]
+      "technologies": [
+        "Solidity",
+        "Node.js",
+        "NestJS",
+        "Python",
+        "Polygon",
+        "EigenLayer",
+        "IPFS",
+        "Web3.js"
+      ]
     },
     {
       "company": "CareerFoundry",
@@ -84,17 +106,23 @@
     {
       "company": "XRPL Commons",
       "role": "Participant - XRPL Commons Aquarium Program | DeFi",
-      "location": "Paris, Île-de-France, France",
+      "location": "Paris, \u00cele-de-France, France",
       "startDate": "2024-09",
       "endDate": "2024-12",
-      "description": "Selected for the XRPL Commons Aquarium Program in Paris, France — DeFi innovations on XRPL including tokens, liquidity pools, hooks, smart contracts, and co-architecting RYTU (Right to Use), a programmable IP rights layer.",
+      "description": "Selected for the XRPL Commons Aquarium Program in Paris, France \u2014 DeFi innovations on XRPL including tokens, liquidity pools, hooks, smart contracts, and co-architecting RYTU (Right to Use), a programmable IP rights layer.",
       "highlights": [
         "Co-architected RYTU (Right to Use), a programmable IP rights layer on XRPL that enables on-chain licensing and revenue sharing for digital assets, deployed to mainnet with 12+ partner integrations.",
         "Designed and implemented 3 custom Hooks for automated liquidity management on XRPL, reducing manual position rebalancing by 95% for concentrated liquidity providers.",
         "Built tokenization framework for IP-backed assets with on-chain provenance verification, cutting licensing dispute resolution time from weeks to minutes.",
         "Published DeFi Expectations research in XRPL Commons Magazine Issue 5, documenting CLMM hedging strategies and risk-transfer protocols for concentrated liquidity positions."
       ],
-      "technologies": ["XRPL", "DeFi", "Hooks", "Smart Contracts", "RYTU"],
+      "technologies": [
+        "XRPL",
+        "DeFi",
+        "Hooks",
+        "Smart Contracts",
+        "RYTU"
+      ],
       "projectUrl": "https://righttouse.com/"
     },
     {
@@ -109,7 +137,15 @@
         "Developed an optimized spatial data persistence and retrieval model, reducing data storage and management costs by 70%.",
         "Integrated an AI model with FastAPI, elevating AI-driven capabilities by 60%."
       ],
-      "technologies": ["FastAPI", "NestJS", "Node.js", "TypeScript", "PostgreSQL", "GCP", "Ethereum"]
+      "technologies": [
+        "FastAPI",
+        "NestJS",
+        "Node.js",
+        "TypeScript",
+        "PostgreSQL",
+        "GCP",
+        "Ethereum"
+      ]
     },
     {
       "company": "CribMD",
@@ -123,7 +159,15 @@
         "Implemented gRPC for inter-service communication, reducing latency by 50%.",
         "Optimized database performance by migrating to MongoDB and Redis, resulting in a 70% reduction in query times."
       ],
-      "technologies": ["JavaScript", "Docker", "Kubernetes", "Kafka", "gRPC", "MongoDB", "Redis"]
+      "technologies": [
+        "JavaScript",
+        "Docker",
+        "Kubernetes",
+        "Kafka",
+        "gRPC",
+        "MongoDB",
+        "Redis"
+      ]
     },
     {
       "company": "Dynamic Flakes Limited",
@@ -138,7 +182,13 @@
         "Migrated legacy system to modern tech stack, reducing maintenance costs by 20%.",
         "Proposed algorithm approach for best-selling/trending products without ML tools, reducing costs by 40%."
       ],
-      "technologies": ["Elasticsearch", "Node.js", "Express", "MongoDB", "Angular"]
+      "technologies": [
+        "Elasticsearch",
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "Angular"
+      ]
     },
     {
       "company": "Telnet Nigeria Limited",
@@ -152,7 +202,17 @@
         "Maintained CI/CD deployment pipeline with Tomcat and Maven, ensuring zero-downtime releases for production systems.",
         "Collaborated with senior engineers to build responsive Thymeleaf front-end views integrated with MSSQL data sources."
       ],
-      "technologies": ["Core Java", "JavaEE", "Tomcat", "Hibernate", "Maven", "Thymeleaf", "Spring MVC", "C#", "MSSQL"]
+      "technologies": [
+        "Core Java",
+        "JavaEE",
+        "Tomcat",
+        "Hibernate",
+        "Maven",
+        "Thymeleaf",
+        "Spring MVC",
+        "C#",
+        "MSSQL"
+      ]
     },
     {
       "company": "JIT Solution Company",
@@ -167,7 +227,11 @@
         "Provided one-on-one code review and mentorship support, reducing average time-to-peer-review from 3 days to 24 hours.",
         "Authorized course completion certificates for participants across 3 training cohorts totaling 45+ learners."
       ],
-      "technologies": ["Java", "MySQL", "MSSQL"]
+      "technologies": [
+        "Java",
+        "MySQL",
+        "MSSQL"
+      ]
     },
     {
       "company": "UC Networks",
@@ -185,7 +249,7 @@
   ],
   "education": [
     {
-      "institution": "Polytechnique Montréal",
+      "institution": "Polytechnique Montr\u00e9al",
       "degree": "Master's degree, Computer Engineering - Software Engineering Option",
       "startDate": "2026-01",
       "endDate": "2028-01",
@@ -214,29 +278,57 @@
   "collaborations": [
     {
       "name": "Estonian Economic Development Knowledge Graph",
-      "org": "Tallinn University (BFM) · Estonian MKM",
+      "org": "Tallinn University (BFM) \u00b7 Estonian MKM",
       "contribution": "MKM DAO prototype for DKG access control and NLP pipeline for economic knowledge-graph entries"
     },
     {
       "name": "Liquidity Hedge",
-      "org": "DLT2026 Workshop · Pula, Italy",
+      "org": "DLT2026 Workshop \u00b7 Pula, Italy",
       "contribution": "Protocol design, risk-neutral pricing model, and PoC for hedging concentrated-liquidity positions"
     }
   ],
   "certifications": [
-    { "name": "Diploma in Computer Engineering" },
-    { "name": "Project Management — Primavera P6 and MS Project" },
-    { "name": "MongoDB M103: Basic Cluster Administration" },
-    { "name": "API Security Architect" },
-    { "name": "AWS Lambda Foundation" },
-    { "name": "Lab - Terraform for Beginners" },
-    { "name": "AWS Knowledge: Serverless" },
-    { "name": "Expert Solidity Bootcamp" },
-    { "name": "Senior Engineer to Lead: Grow and Thrive in the Role", "issuer": "Maven" },
-    { "name": "Blockchain Masterclass" },
-    { "name": "GitHub Profile Ownership Verified (Ranked in top 0.83%)", "date": "2021-12-22" },
-    { "name": "Intro to Machine Learning" },
-    { "name": "Problem Solver" }
+    {
+      "name": "Diploma in Computer Engineering"
+    },
+    {
+      "name": "Project Management \u2014 Primavera P6 and MS Project"
+    },
+    {
+      "name": "MongoDB M103: Basic Cluster Administration"
+    },
+    {
+      "name": "API Security Architect"
+    },
+    {
+      "name": "AWS Lambda Foundation"
+    },
+    {
+      "name": "Lab - Terraform for Beginners"
+    },
+    {
+      "name": "AWS Knowledge: Serverless"
+    },
+    {
+      "name": "Expert Solidity Bootcamp"
+    },
+    {
+      "name": "Senior Engineer to Lead: Grow and Thrive in the Role",
+      "issuer": "Maven"
+    },
+    {
+      "name": "Blockchain Masterclass"
+    },
+    {
+      "name": "GitHub Profile Ownership Verified (Ranked in top 0.83%)",
+      "date": "2021-12-22"
+    },
+    {
+      "name": "Intro to Machine Learning"
+    },
+    {
+      "name": "Problem Solver"
+    }
   ],
   "honorsAndAwards": [
     {
@@ -251,5 +343,9 @@
       "date": "2012-12",
       "description": "In recognition of outstanding academic achievement."
     }
-  ]
+  ],
+  "yearsExperience": 15,
+  "totalCertifications": 13,
+  "productsShipped": 6,
+  "industryDomains": 5
 }

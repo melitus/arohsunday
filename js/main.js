@@ -6,6 +6,38 @@
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   const navHeight = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--nav-height'), 10) || 72;
 
+/* ── Sync hero stats with profile.json ── */
+async function syncHeroStats() {
+  try {
+    const resp = await fetch('data/profile.json');
+    if (!resp.ok) return;
+    const data = await resp.json();
+
+    const statMapping = {
+      'Years building': data.yearsExperience,
+      'Certifications': data.totalCertifications,
+      'Products shipped': data.productsShipped,
+      'Industry domains': data.industryDomains
+    };
+
+    document.querySelectorAll('.stat-item').forEach((item) => {
+      const label = item.querySelector('.stat-label');
+      const numEl = item.querySelector('.stat-number');
+      if (label && numEl && statMapping[label.textContent.trim()] !== undefined) {
+        numEl.dataset.target = statMapping[label.textContent.trim()];
+      }
+    });
+
+    const terminalExp = document.querySelector('.terminal-text[data-typed*="experience →"]');
+    if (terminalExp && data.yearsExperience) {
+      terminalExp.dataset.typed = `experience → ${data.yearsExperience}+ years`;
+    }
+  } catch (_) {
+    /* Graceful fallback — keep hardcoded values */
+  }
+}
+syncHeroStats();
+
   /* ── Hero entrance ── */
   if (hero) {
     if (reducedMotion) {
