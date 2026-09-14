@@ -1351,6 +1351,126 @@ img {
   width: fit-content;
 }
 
+/* Video card for YouTube playlists / sessions */
+.video-card {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 0;
+  background: var(--bg-card);
+  border: 1px solid rgba(30, 58, 138, 0.3);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: var(--transition);
+  box-shadow: var(--shadow-sm);
+}
+
+.video-card:hover {
+  border-color: var(--accent-primary);
+  box-shadow: var(--glow-cyan);
+  transform: translateY(-4px);
+}
+
+.video-visual-link {
+  display: block;
+  height: 100%;
+  color: inherit;
+}
+
+.video-visual-wrap {
+  position: relative;
+  overflow: hidden;
+  min-height: 220px;
+  height: 100%;
+  background: var(--bg-secondary);
+}
+
+.video-visual {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  min-height: 220px;
+  transition: transform 0.55s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.video-card:hover .video-visual {
+  transform: scale(1.08);
+}
+
+.video-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background: linear-gradient(to top, rgba(5, 7, 19, 0.9) 0%, rgba(24, 197, 255, 0.3) 100%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.video-card:hover .video-overlay {
+  opacity: 1;
+}
+
+.video-overlay-icon {
+  font-size: 2.5rem;
+  color: var(--text-primary);
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.6);
+}
+
+.video-overlay-text {
+  color: var(--text-primary);
+  font-size: 0.95rem;
+  font-weight: 700;
+  padding: 0.6rem 1.25rem;
+  border: 2px solid rgba(255, 255, 255, 0.85);
+  border-radius: 8px;
+  transform: translateY(12px);
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.video-card:hover .video-overlay-text {
+  transform: translateY(0);
+}
+
+.video-info {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 0;
+}
+
+.video-info h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin: 0.75rem 0 0.35rem;
+  color: var(--text-primary);
+}
+
+.video-info .project-badge {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--accent-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.25rem;
+}
+
+.video-info p {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.65;
+  margin-bottom: 1rem;
+}
+
+.video-info .project-link {
+  display: inline-block;
+  margin-top: auto;
+  width: fit-content;
+}
+
 /* ── Timeline ── */
 .timeline {
   position: relative;
@@ -1935,12 +2055,24 @@ img {
     grid-template-columns: 1fr;
   }
 
+  .video-card {
+    grid-template-columns: 1fr;
+  }
+
   .magazine-info {
     padding: 1.5rem;
   }
 
   .magazine-visual-wrap {
     min-height: 200px;
+  }
+
+  .video-visual-wrap {
+    min-height: 200px;
+  }
+
+  .video-info {
+    padding: 1.5rem;
   }
 
   .scholar-card {
